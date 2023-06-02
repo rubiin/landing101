@@ -46,7 +46,6 @@ h3{
 
 p{
   font-family: 'Open sans';
-  font-size: 28px;
   font-weight: 400px;
 }
 
@@ -64,6 +63,7 @@ header {
 .container{
   width: 1200px;
   margin: 0 auto;
+  /* border: 1px solid black; */
 }
 
 nav {
@@ -116,15 +116,16 @@ nav {
 .hero_paragraph{
   line-height: 38px;
   margin-bottom: 20px;
-
+  font-size: 28px;
 }
 
 .hero__btns{
   gap:12px;
 }
 
-.hero__btns:nth-child(1){
-  color: red
+.hero__btns a:nth-child(1){
+  background: linear-gradient(90deg, #F34B56 16.15%, rgba(255, 140, 105, 0.94) 83.33%);
+  border: none;
 }
 
 
@@ -132,6 +133,12 @@ nav {
   background: rgba(255, 255, 255, 0.8);
 }
 
-.bootcamps__heading{
- margin: 0 auto;
+.bootcamps_header{
+text-align: center;
+}
+
+
+.bootcamps_text{
+  font-size: 20px;
+  line-height: 26px
 }
