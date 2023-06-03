@@ -5,8 +5,14 @@
 
 
 html {
-  font-size: 16px;
-  font-family: "Open sans";
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-size: 1.25rem;
 }
 
 :root {
@@ -28,31 +34,35 @@ img {
   max-width: 100%;
 }
 
-h2,h3{
+h1,
+h2 {
   font-family: 'Inter';
 }
 
-h2{
-  font-size: 72px;
-
+h1 {
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
-h3{
-  font-size: 50px;
+h2 {
+  font-size: 3.125rem;
   font-weight: 600;
 }
 
-
-p{
-  font-family: 'Open sans';
-  font-weight: 400px;
+.text-center {
+  text-align: center;
 }
 
-.flex{
+
+p {
+  font-weight: 400;
+}
+
+.flex {
   display: flex;
   align-items: center;
 }
+
 
 
 header {
@@ -60,85 +70,172 @@ header {
   backdrop-filter: blur(32px);
 }
 
-.container{
-  width: 1200px;
+.container {
+  width: 75rem;
   margin: 0 auto;
-  /* border: 1px solid black; */
+
+}
+
+.debug {
+  border: 1px solid black;
 }
 
 nav {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   justify-content: space-between;
-  padding:  22px 0;
+  padding: 1.375rem 0;
 }
 
 .btn {
   border: 2px solid #0A13B4;
   border-radius: 4px;
-  padding: 12px 32px;
-  line-height: 22px;
-  font-family: 'Open sans';
+  padding: .75rem 2rem;
+  line-height: 1.375rem;
   font-weight: 700;
   color: var(--color-blue);
 }
 
 
-.btn-primary{
+.btn-primary {
   background-color: var(--color-blue);
   color: white;
 }
 
-.cta{
+.cta {
   gap: 8px
 }
 
 
-.hero{
+.hero {
   display: grid;
-  grid-template-columns: 768px calc(1200px - 768px);
-  padding-top: 80px;
-  padding-bottom: 120px;
+  grid-template-columns: 48rem calc(75rem - 48rem);
+  margin-top: 5rem;
+  margin-bottom: 7.5rem;
 }
 
-.hero__heading{
+.hero__heading {
   color: #05095A;
   line-height: 120%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
-.hero__heading span{
+.hero__heading span {
 
-    color: var(--color-orange);
+  color: var(--color-orange);
 
 }
 
-.hero_paragraph{
-  line-height: 38px;
-  margin-bottom: 20px;
-  font-size: 28px;
+.hero_paragraph {
+  line-height: 2.375rem;
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem;
 }
 
-.hero__btns{
-  gap:12px;
+.hero__btns {
+
+  gap: .75rem;
 }
 
-.hero__btns a:nth-child(1){
+.hero__btns a:nth-child(1) {
   background: linear-gradient(90deg, #F34B56 16.15%, rgba(255, 140, 105, 0.94) 83.33%);
   border: none;
 }
 
 
-.bootcamps{
+.bootcamps {
   background: rgba(255, 255, 255, 0.8);
 }
 
-.bootcamps_header{
-text-align: center;
+.bootcamps_header {
+  text-align: center;
+  font-size: 'Inter';
 }
 
 
-.bootcamps_text{
-  font-size: 20px;
-  line-height: 26px
+.bootcamps_text {
+  margin-top: .875rem;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+}
+
+.curriculum__heading {
+  margin-bottom: .875rem;
+}
+
+.curriculum__paragraph {
+  padding: 0 5.3125rem;
+}
+
+
+.curriculum__features {
+  margin-top: 2.625rem;
+  padding: 0 10.2813rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.curriculum__card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.curriculum__card_detail {
+  margin-bottom: 5rem;
+}
+
+.curriculum__card_detail+a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-blue);
+  font-family:'Inter';
+}
+
+.icon_wrapper {
+  height: 3.25rem;
+  width: 3.25rem;
+}
+
+
+.icon {
+  height: 30px;
+  width: 24px;
+}
+
+
+.curriculum__card_header {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 120%;
+}
+
+
+.curriculum__card_paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-right: 10px;
+  color: var(--color-black);
+}
+
+
+.card1{
+  color: var(--color-orange);
+  background-color: #FFEDE4;
+}
+
+
+.card2{
+  color: #1E5FDA;
+  background-color: #F1F6FF
+}
+
+.card3{
+  color: #1FCE66;
+  background-color: #F0FFF6;
 }
