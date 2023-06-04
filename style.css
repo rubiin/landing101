@@ -12,7 +12,8 @@ html {
 
 body {
   font-family: "Open sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 :root {
@@ -40,12 +41,12 @@ h2 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 72px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3.125rem;
+  font-size: 50px;
   font-weight: 600;
 }
 
@@ -54,9 +55,6 @@ h2 {
 }
 
 
-p {
-  font-weight: 400;
-}
 
 .flex {
   display: flex;
@@ -67,11 +65,12 @@ p {
 
 header {
   width: 100%;
+  background-color: #ffffff;
   backdrop-filter: blur(32px);
 }
 
 .container {
-  width: 75rem;
+  max-width: 1200px;
   margin: 0 auto;
 
 }
@@ -81,17 +80,17 @@ header {
 }
 
 nav {
-  max-width: 75rem;
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 1.375rem 0;
+  padding: 22px 0;
 }
 
 .btn {
   border: 2px solid #0A13B4;
   border-radius: 4px;
-  padding: .75rem 2rem;
-  line-height: 1.375rem;
+  padding: 12px 32px;
+  line-height: 22px;
   font-weight: 700;
   color: var(--color-blue);
 }
@@ -109,15 +108,15 @@ nav {
 
 .hero {
   display: grid;
-  grid-template-columns: 48rem calc(75rem - 48rem);
-  margin-top: 5rem;
-  margin-bottom: 7.5rem;
+  grid-template-columns: 768px calc(1200px - 768px);
+  margin-top: 80px;
+  margin-bottom: 120px;
 }
 
 .hero__heading {
   color: #05095A;
   line-height: 120%;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .hero__heading span {
@@ -127,14 +126,14 @@ nav {
 }
 
 .hero_paragraph {
-  line-height: 2.375rem;
-  font-size: 1.75rem;
-  margin-bottom: 2.5rem;
+  line-height: 38px;
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 
 .hero__btns {
 
-  gap: .75rem;
+  gap: 12px;
 }
 
 .hero__btns a:nth-child(1) {
@@ -154,41 +153,56 @@ nav {
 
 
 .bootcamps_text {
-  margin-top: .875rem;
-  font-size: 1.25rem;
-  line-height: 1.625rem;
-  font-weight: 400;
+  margin-top: 14px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .curriculum__heading {
-  margin-bottom: .875rem;
+  margin-bottom: 14px;
 }
 
 .curriculum__paragraph {
-  padding: 0 5.3125rem;
+  padding: 0 85px;
 }
 
 
 .curriculum__features {
-  margin-top: 2.625rem;
-  padding: 0 10.2813rem;
+  margin-top: 42px;
+  padding: 0 164.5008px;
   display: grid;
-  gap: 2rem;
+  gap: 32px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .curriculum__card {
-  padding: 1.5rem;
+  padding: 24px;
   display: flex;
+  border-radius: 8px;
   flex-direction: column;
 }
 
 .curriculum__card_detail {
-  margin-bottom: 5rem;
+  margin-bottom: 80px;
 }
 
+.curriculum__card_header {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+
+.curriculum__card_paragraph {
+  font-size: 16px;
+  line-height: 22px;
+  padding-right: 10px;
+  color: var(--color-black);
+}
+
+
 .curriculum__card_detail+a {
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: var(--color-blue);
@@ -196,32 +210,13 @@ nav {
 }
 
 .icon_wrapper {
-  height: 3.25rem;
-  width: 3.25rem;
+  height: 52px;
+  width: 52px;
+  margin-bottom: 24px;
 }
 
 
-.icon {
-  height: 30px;
-  width: 24px;
-}
 
-
-.curriculum__card_header {
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 120%;
-}
-
-
-.curriculum__card_paragraph {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  padding-right: 10px;
-  color: var(--color-black);
-}
 
 
 .card1{
