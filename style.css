@@ -20,6 +20,7 @@ body {
   --color-blue: #0A13B4;
   --color-orange: #F36C35;
   --color-black: #1E1B1B;
+  --bg-gray: rgb(251 251 251 / 80%);
 }
 
 
@@ -125,6 +126,10 @@ nav {
 
 }
 
+section{
+  padding:  80px 0;
+}
+
 .hero_paragraph {
   line-height: 38px;
   font-size: 28px;
@@ -142,32 +147,17 @@ nav {
 }
 
 
-.bootcamps {
-  background: rgba(255, 255, 255, 0.8);
-}
 
-.bootcamps_header {
-  text-align: center;
-  font-size: 'Inter';
-}
-
-
-.bootcamps_text {
-  margin-top: 14px;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.curriculum__heading {
+.section__heading {
   margin-bottom: 14px;
 }
 
-.curriculum__paragraph {
+.section__paragraph {
   padding: 0 85px;
 }
 
 
-.curriculum__features {
+.features {
   margin-top: 42px;
   padding: 0 164.5008px;
   display: grid;
@@ -175,18 +165,18 @@ nav {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.curriculum__card {
+.card {
   padding: 24px;
   display: flex;
   border-radius: 8px;
   flex-direction: column;
 }
 
-.curriculum__card_detail {
+.card__detail {
   margin-bottom: 80px;
 }
 
-.curriculum__card_header {
+.card__header {
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 28px;
@@ -194,7 +184,7 @@ nav {
 }
 
 
-.curriculum__card_paragraph {
+.card__paragraph {
   font-size: 16px;
   line-height: 22px;
   padding-right: 10px;
@@ -202,7 +192,7 @@ nav {
 }
 
 
-.curriculum__card_detail+a {
+.card__detail+a {
   font-size: 16px;
   line-height: 22px;
   color: var(--color-blue);
@@ -215,6 +205,12 @@ nav {
   margin-bottom: 24px;
 }
 
+
+
+.bootcamp-cards-container{
+  display: flex;
+  gap: 24px;
+}
 
 
 
@@ -233,4 +229,33 @@ nav {
 .card3{
   color: #1FCE66;
   background-color: #F0FFF6;
+}
+
+.video, .grads,.bootcamps{
+  background-color:var(--bg-gray)
+}
+
+.video iframe{
+  margin-top: 42px;
+  width: 100%;
+  height: 658px;
+  border-radius: 12px;
+}
+
+.companies{
+  display: grid;
+  margin-top: 42px;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows: 90px;
+  align-items: center;
+  justify-items: center;
+  column-gap: 24px;
+}
+
+.company_img{
+  filter: grayscale(100%);
+}
+
+.company_img:hover{
+  filter: none;
 }
